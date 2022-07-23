@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#cta {
+  background-image: url('../img/bg-simplify-section-desktop.svg');
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+
+  #cta {
+    background-image: url('../img/bg-simplify-section-mobile.svg');
+  }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background:white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+
+
+
+
+
+/* PRODUCT.HTML */
+
+._hamburger {
+  display: block;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+  margin-left: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hamburger_top,
+.hamburger_middle,
+.hamburger_bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background:black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+
+.hamburger_middle {
+  transform: translateY(7px);
+}
+
+.hamburger_bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger_top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger_middle {
+  display: none;
+}
+
+.open .hamburger_bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* INDEX.HTML*/
+
+.main_hero{
+  border-bottom-width: 1px;
+  display: none;
+}
+
+.hero{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight:600px ;
+}
+
+
+
+.subhero{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+ }
+
+
+.subhero2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 600px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+
+
+
+
+  
+
+
+
+.nav_bar{
+  display: none;
+  z-index: 50;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  padding-top:32px ;
+  padding-bottom:32px ;
+  margin: top 40px;
+  font-weight: 700;
+  background-color: white;
+  left: 24px;
+  right:24px;
+}
+
+.join{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+}
+
+.sub_join{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+}
+
+
+.sect2{
+  overflow-x: hidden;
+  position: absolute;
+  height: 20rem;
+  width: 87rem;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+ }
+
+
+ .subsect2{
+  text-align: center;
+  margin-top: 6rem;
+  position: relative;
+  
+ }
+
+
+ .sect3{
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+ }
+
+ .subsect_3{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+
+ }
+ 
+.subsect_4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.subsect_5,
+.subsect_6,
+.subsect_7,.subsect_8{
+  width: 15rem;
+  height:9rem;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 20px;
+
+}
+
+
+.ftn{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 24px;
+  margin-top: 24px;
+  border-bottom-width: 2px;
+}
+
+.ftn_1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ftn_2,.ftn_3,.ftn_4,
+.ftn_5,.ftn_6,.ftn_7{
+  width: 20px;
+  height: 20px;
+}
